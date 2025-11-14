@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sibtain Khan Portfolio</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<nav>
+  <div class="logo">SibtainKhan</div>
+  <ul id="nav-links" role="menubar" aria-label="Main Navigation">
+    <li role="none"><a href="#home" role="menuitem" class="active">Home</a></li>
+    <li role="none"><a href="#about" role="menuitem">About</a></li>
+    <li role="none"><a href="#skills" role="menuitem">Skills</a></li> <!-- Added Skills -->
+    <li role="none"><a href="#services" role="menuitem">Services</a></li>
+    <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+    <li role="none"><button class="contact-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button></li>
+  </ul>
+  
+  <div class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" role="button" tabindex="0">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</nav>
+
+<header id="home">
+  <div class="header-content">
+    <div class="intro-left">
+      <h1>Hi, I'm <br>Sibtain Abbas Shigri</h1>
+      <div class="typing" aria-live="polite" aria-atomic="true"></div>
+      <p class="description">
+        Passionate and skilled professional with expertise in web and graphic design, ethical hacking, and software development. Dedicated to crafting beautiful, secure, and functional digital experiences.
+      </p>
+      <div class="btn-group">
+        <a href="https://drive.google.com/file/d/1K0DE6NLMRbvdm62mTge4ZgS1Qy0dIXMG/view?usp=drive_link" target="_blank" role="button" tabindex="7">Resume</a>
+        <a href="https://github.com/SibtainKhan" target="_blank" rel="noopener" role="button" tabindex="8">GitHub</a>
+      </div>
+    </div>
+    <div class="intro-right">
+      <img src="img.jpg" alt="Photo of Sibtain Khan" />
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hello! I am Sibtain Abbas Shigri, a versatile developer and designer with a passion for creating beautiful and efficient digital solutions. Skilled in web design, graphic design, ethical hacking, and software development, I strive to deliver excellence in every project I undertake.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <div class="skill-name">Web Designer</div>
+      <div class="meter-3d"><span style="width:100%"></span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Graphic Designer</div>
+      <div class="meter-3d"><span style="width:100%"></span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Ethical Hacking</div>
+      <div class="meter-3d"><span style="width:100%"></span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">MS Office Specialist</div>
+      <div class="meter-3d"><span style="width:100%"></span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Web Developer</div>
+      <div class="meter-3d"><span style="width:100%"></span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">C++ Developer</div>
+      <div class="meter-3d"><span style="width:100%"></span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Python Developer</div>
+      <div class="meter-3d"><span style="width:100%"></span></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">CV Writing</div>
+      <div class="meter-3d"><span style="width:100%"></span></div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-title">AirBnb Website Clone</div>
+      <div class="project-desc">A fully responsive Airbnb clone with interactive UI using React and Firebase.</div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">Weather Forecasting Website</div>
+      <div class="project-desc">Real-time weather updates powered by OpenWeather API with elegant design.</div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">Chatting App Design</div>
+      <div class="project-desc">Modern and intuitive chat application design using Firebase authentication and Firestore.</div>
+    </div>
+     <div class="project-card">
+      <div class="project-title">AI Chatbot</div>
+      <div class="project-desc">An intelligent AI-powered chatbot designed to provide instant, natural, and context-aware conversations, enhancing user engagement and support.</div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="services-list">
+    <div class="service-card">
+      <div class="service-title">Web Design</div>
+      <div class="service-desc">Crafting responsive and attractive websites tailored to your needs.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-title">Graphic Design</div>
+      <div class="service-desc">Creating stunning logos, banners, and visuals that stand out.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-title">Ethical Hacking</div>
+      <div class="service-desc">Ensuring your digital security through comprehensive penetration testing.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-title">Software Development</div>
+      <div class="service-desc">Building efficient and scalable software solutions for your business.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <label for="name">Name</label>
+    <input id="name" name="user_name" type="text" required placeholder="Your name" />
+    
+    <label for="email">Email</label>
+    <input id="email" name="user_email" type="email" required placeholder="Your email" />
+    
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+    
+    <button type="submit">Send</button>
+  </form>
+</section>
+<!-- Add EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
